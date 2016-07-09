@@ -1,10 +1,10 @@
 
 /*
-Ramshackle v0.9.2
+Ramshackle v0.9.3
 Copyright 2016, Daniel Strong
 www.getramshackle.com
 Free to use under the MIT license.
-7/4/2016
+7/8/2016
 */
 
 /*  TABLE OF CONTENTS
@@ -155,11 +155,6 @@ body {
     line-height: 1.7em;
 }
 
-hr {
-    border-width: 0;
-    border-top: 1px solid #fafafa;
-}
-
 img {
     display: block;
     width: 100%;
@@ -175,7 +170,7 @@ svg {
 ================================== */
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: normal;
     line-height: 1.3em;
     margin: 0 0 .4em 0;
 }
@@ -213,7 +208,7 @@ h6 { font-size: 1.3em; }
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.1);
+    background: rgba(0,0,0,.05);
 }
 
 .btn-fancy {
@@ -395,13 +390,29 @@ li {
 
 /* For screens smaller than 768px wide */
 @media (min-width: 481px) and (max-width: 768px) {
-    .grid-container {
-        width: 98%;
+    .grid-container { width: 98%; }
+    .row { margin: 0 auto; }
+    .col-row {
+        padding: 25px;
         margin: 0 auto;
     }
-    .row { margin: 0 auto; }
-    .col-row { margin: 0 auto; }
     .col { margin: 1% auto; }
+    h1 { font-size: 3.6em; }
+    h2 { font-size: 3.1em; }
+    h3 { font-size: 2.6em; }
+    h4 { font-size: 2.1em; }
+    h5 { font-size: 1.6em; }
+    h6 { font-size: 1.1em; }
+    input[type='email'],
+    input[type='number'],
+    input[type='password'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='text'],
+    input[type='url'],
+    textarea,
+    select,
+    option { width: 100%; }
 }
 
 /* For screens smaller than 480px wide */
@@ -412,12 +423,25 @@ li {
         margin: 0;
     }
     .row { margin: 0 auto; }
-    .col-row { margin: 0 auto; }
-    .col { margin: 2% auto; }
+    .col-row {
+        padding: 25px;
+        margin: 0 auto;
+    }
+    .col { margin: 1% auto; }
     h1 { font-size: 3.4em; }
     h2 { font-size: 2.9em; }
     h3 { font-size: 2.4em; }
     h4 { font-size: 2em; }
     h5 { font-size: 1.4em; }
     h6 { font-size: 1em; }
+    input[type='email'],
+    input[type='number'],
+    input[type='password'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='text'],
+    input[type='url'],
+    textarea,
+    select,
+    option { width: 100%; }
 }
